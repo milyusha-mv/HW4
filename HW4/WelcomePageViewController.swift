@@ -17,7 +17,7 @@ class WelcomePageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let userName = userName {
-            userNameLabel.text = "Welcome, \(userName)! 😱"
+            userNameLabel.text = "Welcome, \(userName)!"
         }
 }
 }
