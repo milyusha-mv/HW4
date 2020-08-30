@@ -34,6 +34,7 @@
                                         <state key="normal" title="Log in"/>
                                         <connections>
                                             <action selector="logInAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="396-We-U0D"/>
+                                            <segue destination="pbO-mp-i5q" kind="show" identifier="welcomePageSegue" id="KUe-w2-gFN"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -79,6 +80,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
+        </scene>
+        <!--Welcome Page View Controller-->
+        <scene sceneID="byc-fj-AOY">
+            <objects>
+                <viewController id="pbO-mp-i5q" customClass="WelcomePageViewController" customModule="HW4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cyK-fv-UnQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAw-OZ-4fr">
+                                <rect key="frame" x="16" y="101" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kMV-2M-1NV" firstAttribute="trailing" secondItem="RAw-OZ-4fr" secondAttribute="trailing" constant="16" id="3hS-5i-WeE"/>
+                            <constraint firstItem="RAw-OZ-4fr" firstAttribute="leading" secondItem="kMV-2M-1NV" secondAttribute="leading" constant="16" id="M51-fh-iGb"/>
+                            <constraint firstItem="RAw-OZ-4fr" firstAttribute="centerX" secondItem="cyK-fv-UnQ" secondAttribute="centerX" id="V1z-wk-3gt"/>
+                            <constraint firstItem="RAw-OZ-4fr" firstAttribute="top" secondItem="kMV-2M-1NV" secondAttribute="top" constant="101" id="lH0-UO-0Z1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kMV-2M-1NV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V95-Tw-d5S"/>
+                    <connections>
+                        <outlet property="userNameLabel" destination="RAw-OZ-4fr" id="VX0-dM-G1I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5G-Ou-Sig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905.625" y="119.36619718309859"/>
         </scene>
     </scenes>
 </document>

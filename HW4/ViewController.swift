@@ -25,8 +25,8 @@ class ViewController: UIViewController {
             passwordTextField.text=""
             return
         }
-        showAlert(with: "Welcome!", and: "Welcome!")
     }
+    
     @IBAction func forgetUserNameAction() {
         let login = AuthorizationData.getAuthData()
         showAlert(with: "Forgot User Name?", and: "User name: \(login.login) 😀")
@@ -36,8 +36,17 @@ class ViewController: UIViewController {
         let pswd = AuthorizationData.getAuthData()
         showAlert(with: "Forgot password?", and: "Your password: \(pswd.password) 🙃")
     }
-    
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "welcomePageSegue" {
+            if let welcomePageVC = segue.destination as? WelcomePageViewController {
+                welcomePageVC.userName = "Жопа"
+            }
+        }
+    }
 }
+
+
 
 // MARK: - Alert Controller
 extension ViewController {
