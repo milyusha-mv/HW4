@@ -44,10 +44,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoY-NA-Jy6">
                                         <rect key="frame" x="0.0" y="0.0" width="133" height="30"/>
                                         <state key="normal" title="Forgot User Name?"/>
+                                        <connections>
+                                            <action selector="forgetUserNameAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wud-hn-DYq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bku-bZ-gGB">
                                         <rect key="frame" x="165" y="0.0" width="123" height="30"/>
                                         <state key="normal" title="Forgot password?"/>
+                                        <connections>
+                                            <action selector="forgotPasswordAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="M2i-59-4uu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -65,6 +71,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="cSI-vX-4HR" id="2JZ-YP-cgn"/>
+                        <outlet property="userNameTextField" destination="6SI-JQ-vrt" id="Atn-Q3-neT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

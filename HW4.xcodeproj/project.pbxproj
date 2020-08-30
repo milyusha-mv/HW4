@@ -13,6 +13,7 @@
 		43A597FE24FAC11600F0113E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A597FC24FAC11600F0113E /* Main.storyboard */; };
 		43A5980024FAC11600F0113E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A597FF24FAC11600F0113E /* Assets.xcassets */; };
 		43A5980324FAC11600F0113E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A5980124FAC11600F0113E /* LaunchScreen.storyboard */; };
+		43A5980B24FBA21D00F0113E /* AthorizationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A5980A24FBA21D00F0113E /* AthorizationData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		43A597FF24FAC11600F0113E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43A5980224FAC11600F0113E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43A5980424FAC11600F0113E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A5980A24FBA21D00F0113E /* AthorizationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthorizationData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				43A597F824FAC11600F0113E /* SceneDelegate.swift */,
 				43A597FA24FAC11600F0113E /* ViewController.swift */,
 				43A597FC24FAC11600F0113E /* Main.storyboard */,
+				43A5980A24FBA21D00F0113E /* AthorizationData.swift */,
 				43A597FF24FAC11600F0113E /* Assets.xcassets */,
 				43A5980124FAC11600F0113E /* LaunchScreen.storyboard */,
 				43A5980424FAC11600F0113E /* Info.plist */,
@@ -141,6 +144,7 @@
 				43A597FB24FAC11600F0113E /* ViewController.swift in Sources */,
 				43A597F724FAC11600F0113E /* AppDelegate.swift in Sources */,
 				43A597F924FAC11600F0113E /* SceneDelegate.swift in Sources */,
+				43A5980B24FBA21D00F0113E /* AthorizationData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
