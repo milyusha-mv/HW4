@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "welcomePageSegue" {
             if let welcomePageVC = segue.destination as? WelcomePageViewController {
-                welcomePageVC.userName = "Жопа"
+                welcomePageVC.userName = userNameTextField.text
             }
         }
     }
