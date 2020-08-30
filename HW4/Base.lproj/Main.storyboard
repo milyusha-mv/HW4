@@ -103,9 +103,13 @@
                                 <rect key="frame" x="124" y="439" width="72" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Log out"/>
+                                <connections>
+                                    <action selector="logOutAction" destination="pbO-mp-i5q" eventType="touchUpInside" id="IEu-Ux-6SX"/>
+                                    <segue destination="4hc-Em-PK5" kind="unwind" unwindAction="logOutSegueWithSegue:" id="ZqE-Uj-vGh"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="kMV-2M-1NV" firstAttribute="trailing" secondItem="RAw-OZ-4fr" secondAttribute="trailing" constant="16" id="3hS-5i-WeE"/>
                             <constraint firstItem="kMV-2M-1NV" firstAttribute="bottom" secondItem="0mH-1v-3o5" secondAttribute="bottom" constant="41" id="GR8-uV-1sH"/>
@@ -120,13 +124,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kMV-2M-1NV"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Welcome" id="zYo-2O-A1G"/>
+                    <tabBarItem key="tabBarItem" title="Welcome" image="speaker" catalog="system" id="zYo-2O-A1G"/>
                     <navigationItem key="navigationItem" id="V95-Tw-d5S"/>
                     <connections>
                         <outlet property="userNameLabel" destination="RAw-OZ-4fr" id="VX0-dM-G1I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5G-Ou-Sig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="4hc-Em-PK5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2904.375" y="125.70422535211267"/>
         </scene>
@@ -141,12 +146,29 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="pbO-mp-i5q" kind="relationship" relationship="viewControllers" id="eWs-DO-v6v"/>
+                        <segue destination="pbO-mp-i5q" kind="relationship" relationship="viewControllers" destinationCreationSelector="welcomePageSegue" id="eWs-DO-v6v"/>
+                        <segue destination="wXX-gj-Dyt" kind="relationship" relationship="viewControllers" id="GiM-zl-BV2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLV-h7-N6a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1906.875" y="125.70422535211267"/>
+        </scene>
+        <!--Obout me-->
+        <scene sceneID="LaM-Sm-TXh">
+            <objects>
+                <viewController id="wXX-gj-Dyt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fjV-wr-rYV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Hzk-dN-zEf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Obout me" image="person.crop.square" catalog="system" id="uMi-AF-qLa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbm-jJ-EcX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1907" y="968"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GoO-GI-xES">
@@ -169,5 +191,7 @@
     </scenes>
     <resources>
         <image name="Image" width="688.33331298828125" height="578.33331298828125"/>
+        <image name="person.crop.square" catalog="system" width="128" height="114"/>
+        <image name="speaker" catalog="system" width="128" height="121"/>
     </resources>
 </document>

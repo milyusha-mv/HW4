@@ -36,17 +36,21 @@ class ViewController: UIViewController {
         let pswd = AuthorizationData.getAuthData()
         showAlert(with: "Forgot password?", and: "Your password: \(pswd.password) 🙃")
     }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "welcomePageSegue" {
-            if let welcomePageVC = segue.destination as? WelcomePageViewController {
-                welcomePageVC.userName = userNameTextField.text
-            }
-        }
+    
+    @IBAction func logOutSegue(segue: UIStoryboardSegue) {
+        
     }
 }
 
 
+// MARK: - Navigation
+extension ViewController{
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let tabBarController = segue.destination as! UITabBarController
+        let welcomePageVC = tabBarController.viewControllers?.first as! WelcomePageViewController
+        welcomePageVC.userName = userNameTextField.text
+    }
+}
 
 // MARK: - Alert Controller
 extension ViewController {
