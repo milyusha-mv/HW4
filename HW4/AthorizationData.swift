@@ -13,7 +13,7 @@ struct AuthorizationData {
 
 extension AuthorizationData {
     static func getAuthData() -> AuthorizationData {
-        return AuthorizationData(login: "Misha", password: "1")
+        return AuthorizationData(login: "Misha", password: "Password")
     }
 }
 

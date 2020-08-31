@@ -14,9 +14,16 @@ class AboutMeViewController: UIViewController {
     
     @IBOutlet var userNameLabel: UILabel!
     
+    @IBOutlet var aboutMeTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        userNameLabel.text = userName
+        if let userName = userName {
+            userNameLabel.text = "My name is \(userName)!"
+        }
+        let aboutMetext = AboutMeData.getAboutMeData()
+        aboutMeTextView.text = aboutMetext.text
+        
     }
 
 }

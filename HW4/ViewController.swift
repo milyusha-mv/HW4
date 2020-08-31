@@ -13,11 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
     @IBAction func logInAction() {
         let userData = AuthorizationData.getAuthData()
         guard (userNameTextField.text == userData.login) && (passwordTextField.text == userData.password) else {
@@ -42,13 +37,14 @@ class ViewController: UIViewController {
     }
 }
 
-
 // MARK: - Navigation
 extension ViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let tabBarController = segue.destination as! UITabBarController
-        let welcomePageVC = tabBarController.viewControllers?.first as! WelcomePageViewController
+        let welcomePageVC = tabBarController.viewControllers?[0] as! WelcomePageViewController
+        let aboutMePageVC = tabBarController.viewControllers?[1] as! AboutMeViewController
         welcomePageVC.userName = userNameTextField.text
+        aboutMePageVC.userName = userNameTextField.text
     }
 }
 

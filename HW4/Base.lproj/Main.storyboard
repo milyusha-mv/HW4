@@ -168,11 +168,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nly-Sd-91e">
+                                <rect key="frame" x="16" y="220" width="288" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="cpu-L8-H2J" firstAttribute="top" secondItem="Hzk-dN-zEf" secondAttribute="top" constant="105" id="I1D-D7-Q1d"/>
                             <constraint firstItem="Hzk-dN-zEf" firstAttribute="trailing" secondItem="cpu-L8-H2J" secondAttribute="trailing" constant="16" id="O1I-oI-WZx"/>
+                            <constraint firstItem="nly-Sd-91e" firstAttribute="leading" secondItem="Hzk-dN-zEf" secondAttribute="leading" constant="16" id="QJS-zw-stA"/>
+                            <constraint firstItem="Hzk-dN-zEf" firstAttribute="trailing" secondItem="nly-Sd-91e" secondAttribute="trailing" constant="16" id="dvY-mU-lik"/>
+                            <constraint firstItem="nly-Sd-91e" firstAttribute="leading" secondItem="cpu-L8-H2J" secondAttribute="leading" id="eAl-Rm-sI0"/>
+                            <constraint firstItem="nly-Sd-91e" firstAttribute="width" secondItem="fjV-wr-rYV" secondAttribute="height" multiplier="36:71" id="fWj-5J-e1G"/>
                             <constraint firstItem="cpu-L8-H2J" firstAttribute="centerX" secondItem="fjV-wr-rYV" secondAttribute="centerX" id="pcg-2E-YaA"/>
                             <constraint firstItem="cpu-L8-H2J" firstAttribute="leading" secondItem="Hzk-dN-zEf" secondAttribute="leading" constant="16" id="vNi-8D-Z9W"/>
                         </constraints>
@@ -180,6 +192,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Obout me" image="person.crop.square" catalog="system" id="uMi-AF-qLa"/>
                     <connections>
+                        <outlet property="aboutMeTextView" destination="nly-Sd-91e" id="xfD-1I-8ee"/>
                         <outlet property="userNameLabel" destination="cpu-L8-H2J" id="YpL-Q5-UF3"/>
                     </connections>
                 </viewController>
