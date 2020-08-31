@@ -64,19 +64,59 @@
 		43A597F524FAC11600F0113E /* HW4 */ = {
 			isa = PBXGroup;
 			children = (
+				43A6A27D24FCBA5F00F5F2DD /* ViewControllers */,
+				43A6A27E24FCBA7F00F5F2DD /* Models */,
+				43A6A27F24FCBA9600F5F2DD /* Storyboards */,
+				43A6A28024FCBB1900F5F2DD /* Sources */,
+				43A6A28124FCBB5100F5F2DD /* Others */,
+			);
+			path = HW4;
+			sourceTree = "<group>";
+		};
+		43A6A27D24FCBA5F00F5F2DD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				43A597FA24FAC11600F0113E /* ViewController.swift */,
 				43A6A27724FC1CA900F5F2DD /* WelcomePageViewController.swift */,
 				43A6A27924FCAE5300F5F2DD /* AboutMeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		43A6A27E24FCBA7F00F5F2DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				43A5980A24FBA21D00F0113E /* AthorizationData.swift */,
 				43A6A27B24FCB47F00F5F2DD /* AboutMeData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		43A6A27F24FCBA9600F5F2DD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				43A597FC24FAC11600F0113E /* Main.storyboard */,
-				43A597FF24FAC11600F0113E /* Assets.xcassets */,
 				43A5980124FAC11600F0113E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		43A6A28024FCBB1900F5F2DD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				43A597FF24FAC11600F0113E /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		43A6A28124FCBB5100F5F2DD /* Others */ = {
+			isa = PBXGroup;
+			children = (
 				43A597F824FAC11600F0113E /* SceneDelegate.swift */,
 				43A597F624FAC11600F0113E /* AppDelegate.swift */,
 				43A5980424FAC11600F0113E /* Info.plist */,
 			);
-			path = HW4;
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,7 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HW4/Info.plist;
+				INFOPLIST_FILE = HW4/Others/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HW4/Info.plist;
+				INFOPLIST_FILE = HW4/Others/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
