@@ -157,14 +157,31 @@
         <!--Obout me-->
         <scene sceneID="LaM-Sm-TXh">
             <objects>
-                <viewController id="wXX-gj-Dyt" sceneMemberID="viewController">
+                <viewController id="wXX-gj-Dyt" customClass="AboutMeViewController" customModule="HW4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fjV-wr-rYV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpu-L8-H2J">
+                                <rect key="frame" x="16" y="105" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cpu-L8-H2J" firstAttribute="top" secondItem="Hzk-dN-zEf" secondAttribute="top" constant="105" id="I1D-D7-Q1d"/>
+                            <constraint firstItem="Hzk-dN-zEf" firstAttribute="trailing" secondItem="cpu-L8-H2J" secondAttribute="trailing" constant="16" id="O1I-oI-WZx"/>
+                            <constraint firstItem="cpu-L8-H2J" firstAttribute="centerX" secondItem="fjV-wr-rYV" secondAttribute="centerX" id="pcg-2E-YaA"/>
+                            <constraint firstItem="cpu-L8-H2J" firstAttribute="leading" secondItem="Hzk-dN-zEf" secondAttribute="leading" constant="16" id="vNi-8D-Z9W"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Hzk-dN-zEf"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Obout me" image="person.crop.square" catalog="system" id="uMi-AF-qLa"/>
+                    <connections>
+                        <outlet property="userNameLabel" destination="cpu-L8-H2J" id="YpL-Q5-UF3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbm-jJ-EcX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

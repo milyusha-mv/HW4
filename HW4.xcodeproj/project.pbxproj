@@ -15,6 +15,7 @@
 		43A5980324FAC11600F0113E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A5980124FAC11600F0113E /* LaunchScreen.storyboard */; };
 		43A5980B24FBA21D00F0113E /* AthorizationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A5980A24FBA21D00F0113E /* AthorizationData.swift */; };
 		43A6A27824FC1CA900F5F2DD /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A6A27724FC1CA900F5F2DD /* WelcomePageViewController.swift */; };
+		43A6A27A24FCAE5300F5F2DD /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A6A27924FCAE5300F5F2DD /* AboutMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		43A5980424FAC11600F0113E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A5980A24FBA21D00F0113E /* AthorizationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthorizationData.swift; sourceTree = "<group>"; };
 		43A6A27724FC1CA900F5F2DD /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		43A6A27924FCAE5300F5F2DD /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				43A597F824FAC11600F0113E /* SceneDelegate.swift */,
 				43A597FA24FAC11600F0113E /* ViewController.swift */,
 				43A597FC24FAC11600F0113E /* Main.storyboard */,
+				43A6A27924FCAE5300F5F2DD /* AboutMeViewController.swift */,
 				43A6A27724FC1CA900F5F2DD /* WelcomePageViewController.swift */,
 				43A5980A24FBA21D00F0113E /* AthorizationData.swift */,
 				43A597FF24FAC11600F0113E /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 				43A597F724FAC11600F0113E /* AppDelegate.swift in Sources */,
 				43A597F924FAC11600F0113E /* SceneDelegate.swift in Sources */,
 				43A5980B24FBA21D00F0113E /* AthorizationData.swift in Sources */,
+				43A6A27A24FCAE5300F5F2DD /* AboutMeViewController.swift in Sources */,
 				43A6A27824FC1CA900F5F2DD /* WelcomePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

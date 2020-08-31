@@ -24,3 +24,12 @@ class WelcomePageViewController: UIViewController {
         dismiss(animated: true)
     }
 }
+
+// MARK: - Navigation
+extension WelcomePageViewController{
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let tabBarController = segue.destination as! UITabBarController
+        let aboutMePageVC = tabBarController.viewControllers?[2] as! AboutMeViewController
+        aboutMePageVC.userName = userNameLabel.text
+    }
+}
