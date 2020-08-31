@@ -12,6 +12,6 @@ struct AboutMeData {
 
 extension AboutMeData {
     static func getAboutMeData() -> AboutMeData {
-        return AboutMeData(text: "I study Swift on the swiftbook platform")
+        return AboutMeData(text: "I study Swift on the swiftbook platform and I like it!")
     }
 }
